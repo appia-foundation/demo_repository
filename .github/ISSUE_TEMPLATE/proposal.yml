@@ -1,0 +1,48 @@
+name: Propose a change
+description: Suggest a change to a specification or document
+title: "[Proposal]: "
+labels: ["proposal"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for contributing! This is a sandbox, so feel free to practise. Fill in as much as you can. Short and specific is better than long and vague.
+  - type: input
+    id: location
+    attributes:
+      label: Where does this apply?
+      description: The file, section number, or line the proposal relates to.
+      placeholder: "specs/sample-specification.md, section 3.2"
+    validations:
+      required: true
+  - type: dropdown
+    id: change-type
+    attributes:
+      label: What kind of change is it?
+      options:
+        - Editorial (typos, wording, formatting)
+        - Terminology (definitions, consistent use of terms)
+        - Technical (requirements, scope, logic)
+        - Structural (reordering, adding or removing sections)
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: What are you proposing?
+      description: Describe the change. If you can, include the exact text you'd like to see.
+    validations:
+      required: true
+  - type: textarea
+    id: rationale
+    attributes:
+      label: Why is this needed?
+      description: What problem does it solve, or what does it improve?
+    validations:
+      required: true
+  - type: checkboxes
+    id: next-steps
+    attributes:
+      label: Next steps
+      options:
+        - label: I am happy to open a pull request for this myself.

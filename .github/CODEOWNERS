@@ -1,0 +1,20 @@
+# CODEOWNERS: who is automatically asked to review changes.
+#
+# Replace the placeholder teams or usernames below with real ones.
+# Teams must exist in the organisation and have write access to this repository,
+# otherwise GitHub ignores the rule. You can also use individual usernames, e.g. @octocat.
+# The LAST matching pattern wins.
+
+# Default: the sandbox maintainers review everything
+*                       @appia-foundation/sandbox-maintainers
+
+# Specification files
+/specs/                 @appia-foundation/sandbox-spec-reviewers
+
+# Documentation and onboarding material
+/docs/                  @appia-foundation/sandbox-maintainers
+/GLOSSARY.md            @appia-foundation/sandbox-maintainers
+/FAQ.md                 @appia-foundation/sandbox-maintainers
+
+# Repository configuration and automation
+/.github/               @appia-foundation/sandbox-maintainers

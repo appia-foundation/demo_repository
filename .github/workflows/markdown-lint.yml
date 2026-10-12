@@ -1,0 +1,28 @@
+name: Markdown lint
+
+# Runs an automatic style check on Markdown files whenever a pull request is opened or updated.
+# It is a demonstration of automated checks, and it is not required to merge.
+
+on:
+  pull_request:
+    paths:
+      - "**.md"
+  push:
+    branches: [main]
+    paths:
+      - "**.md"
+
+permissions:
+  contents: read
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the repository
+        uses: actions/checkout@v4
+
+      - name: Lint Markdown files
+        uses: DavidAnson/markdownlint-cli2-action@v19
+        with:
+          globs: "**/*.md"

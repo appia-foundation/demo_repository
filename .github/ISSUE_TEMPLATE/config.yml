@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Start a general discussion
+    url: https://github.com/appia-foundation/demo-repository/discussions
+    about: For open-ended conversation that isn't a specific proposal or question.
+  - name: Report a security vulnerability
+    url: https://github.com/appia-foundation/demo-repository/blob/main/SECURITY.md
+    about: Please do not report security issues in public. Follow the process in SECURITY.md.

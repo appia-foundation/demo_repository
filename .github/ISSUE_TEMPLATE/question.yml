@@ -1,0 +1,20 @@
+name: Ask a question
+description: Ask about how GitHub or this repository works
+title: "[Question]: "
+labels: ["question"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        No question is too basic. Check the FAQ and Glossary in the repository first, but if you're still stuck, ask here.
+  - type: textarea
+    id: question
+    attributes:
+      label: What would you like to know?
+    validations:
+      required: true
+  - type: textarea
+    id: tried
+    attributes:
+      label: What have you already tried?
+      description: Optional, but it helps us give a useful answer.
