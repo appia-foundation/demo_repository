@@ -19,6 +19,7 @@ This document does not cover the design of widgets or the commercial terms under
 The following documents are referred to in the text in such a way that some or all of their content constitutes requirements of this document.
 
 - ISO/IEC 17000:2020, *Conformity assessment: Vocabulary and general principles*
+- Appia - Architecture specifications
 
 ## 3. Terms and definitions
 
@@ -40,6 +41,9 @@ For the purposes of this document, the following terms and definitions apply.
 **REQ-4.1.1** The provider shall maintain a description of the widget, including its intended purpose.
 
 **REQ-4.1.2** The provider shall retain evidence of conformity for at least five years after the widget is last made available.
+
+the organization shall have a policy for xxx.
+4.1.4 the organization shall have a policy for yyy.
 
 ### 4.2 Quality management
 
