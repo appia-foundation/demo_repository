@@ -43,6 +43,7 @@ For the purposes of this document, the following terms and definitions apply.
 **REQ-4.1.2** The provider shall retain evidence of conformity for at least five years after the widget is last made available.
 
 the organization shall have a policy for xxx.
+4.1.4 the organization shall have a policy for yyy.
 
 ### 4.2 Quality management
 
