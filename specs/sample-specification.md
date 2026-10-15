@@ -19,6 +19,7 @@ This document does not cover the design of widgets or the commercial terms under
 The following documents are referred to in the text in such a way that some or all of their content constitutes requirements of this document.
 
 - ISO/IEC 17000:2020, *Conformity assessment: Vocabulary and general principles*
+- Appia - Architecture specifications
 
 ## 3. Terms and definitions
 
