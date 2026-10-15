@@ -7,3 +7,5 @@ Only include what you are comfortable having visible to other members.
 | Name | Organisation | GitHub username | Date added |
 |------|--------------|-----------------|------------|
 | _Example Person_ | _Example Org_ | `@example` | 2026-01-01 |
+| Paul Houzé| Microsoft |  | 2026-10-15 |
+
