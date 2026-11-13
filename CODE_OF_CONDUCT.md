@@ -19,7 +19,7 @@ Appia Foundation spaces, including this repository, are for collaborative work. 
 
 ## Reporting a concern
 
-If you experience or see behaviour that breaks these expectations, please contact `<INSERT CONTACT NAME / EMAIL>`. Reports will be handled with discretion.
+If you experience or see behaviour that breaks these expectations, please contact the repository administrator, Sean Mcilroy (`@seanmcilroy29` on GitHub). Reports will be handled with discretion.
 
 Maintainers may edit or remove comments, close or lock conversations, or remove access to the repository where necessary to keep it a constructive space.
 

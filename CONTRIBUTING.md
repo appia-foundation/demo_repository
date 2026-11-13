@@ -31,7 +31,7 @@ Thank you for taking part. This is a sandbox, so the main goal is to learn the w
 
 ## What to expect from review
 
-- Reviewers are volunteers, so please allow a few working days for a response. `<ADJUST TO MATCH YOUR EXPECTATIONS>`
+- Reviewers are volunteers, so please allow a few working days for a response.
 - You may be asked to make changes. That is a normal part of the process and isn't a criticism.
 - If a pull request is waiting for a long time, leave a polite comment mentioning the reviewer.
 

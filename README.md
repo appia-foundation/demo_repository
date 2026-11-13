@@ -14,9 +14,7 @@ The Appia membership has agreed to use GitHub to host our specifications. This g
 
 ## Orientation
 
-📺 **Orientation recording / walkthrough:** `<INSERT LINK>`
-
-If you are new to GitHub, start there, then come back and try the exercises below.
+📺 **Orientation recording:** to be added. In the meantime, this README, the [Glossary](GLOSSARY.md) and the [FAQ](FAQ.md) cover the basics, and you can try the exercises below.
 
 ## What's in this repository
 
@@ -25,6 +23,7 @@ If you are new to GitHub, start there, then come back and try the exercises belo
 | [`specs/sample-specification.md`](specs/sample-specification.md) | A fictional specification to practise editing. It contains a few deliberate flaws for you to find. |
 | [`GLOSSARY.md`](GLOSSARY.md) | Plain-English definitions of GitHub terms, with Word and email comparisons. |
 | [`docs/how-appia-maps-to-github.md`](docs/how-appia-maps-to-github.md) | How our working group and approval process translates into GitHub. |
+| [`docs/working-in-the-core-specs-repo.md`](docs/working-in-the-core-specs-repo.md) | How the real repository differs: `main` for releases, `dev` for staging, one branch per spec. |
 | [`docs/explore-the-history.md`](docs/explore-the-history.md) | A short exercise on seeing who changed what, and when. |
 | [`FAQ.md`](FAQ.md) | Answers to common "what do I do if...?" questions. |
 | [`CONTRIBUTING.md`](CONTRIBUTING.md) | How to propose changes and what to expect from review. |
@@ -39,12 +38,12 @@ If you are new to GitHub, start there, then come back and try the exercises belo
 ## Before you start
 
 1. Create a free account at [github.com](https://github.com/signup) if you don't already have one.
-2. Make sure you have been given access to this repository. If you can't see it or can't edit it, contact `<INSERT CONTACT NAME / EMAIL>`.
+2. Make sure you have been given access to this repository. If you can't see it or can't edit it, contact the repository administrator, Sean Mcilroy (`@seanmcilroy29` on GitHub).
 3. (Optional) Install [GitHub Desktop](https://desktop.github.com/) if you prefer a graphical tool to the command line. You can do everything in this guide directly in your browser.
 
 ## The core workflow at a glance
 
-```
+```text
 Issue  →  Branch  →  Edit  →  Pull Request  →  Review  →  Merge
 ```
 
@@ -129,6 +128,8 @@ Once a PR has the required approvals, a maintainer will merge it. After merging,
 | 3 | Open a pull request for that change | Pull requests |
 | 4 | Review a colleague's pull request and leave a comment | Reviews |
 | 5 | Propose a change to a sample specification file and link it to an issue | End-to-end workflow |
+| 6 | Create a branch named `spec/yourname-sample` **from `dev`** and edit the sample specification | Spec-style branches |
+| 7 | Open a pull request from that branch **into `dev`** (not `main`) and link an issue | Working with `dev`, as in the real repository |
 
 ## Ground rules
 
@@ -140,7 +141,7 @@ Once a PR has the required approvals, a maintainer will merge it. After merging,
 ## Getting help
 
 - Questions about GitHub usage? Open an issue with the label `question`.
-- Need a hand directly? Contact `<INSERT CONTACT NAME / EMAIL>`.
-- Want a refresher? Re-watch the [orientation](#orientation).
+- Need a hand directly? Contact the repository administrator, Sean Mcilroy (`@seanmcilroy29` on GitHub).
+- Want a refresher? Re-read the [Orientation](#orientation) section, the [Glossary](GLOSSARY.md) and the [FAQ](FAQ.md).
 
 Happy experimenting!
