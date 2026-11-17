@@ -38,3 +38,22 @@ gitGraph
 ## Practise the real flow
 
 This sandbox has a `dev` branch for the purpose. See exercises 6 and 7 in the [README](../README.md#try-it-yourself-suggested-exercises).
+
+## The route to version 1.0 (proposal)
+
+The Working Group is considering this route from draft to final. It is a proposal, not yet agreed.
+
+| Stage | What it means | In the repository |
+|---|---|---|
+| Draft | Editors write and revise their own spec | `spec/NN-name` branch |
+| Working Group | The group reviews, and a chair merges what it approves | Pull request into `dev` |
+| Approved | All specs are approved and sit together | A `release/1.0` branch |
+| Candidate | The Steering Committee approves submission, and the text is frozen | Tag `v1.0.0-rc.1` |
+| ISO review | Fixes from review are agreed and re-tagged | Tags `rc.2`, `rc.3` |
+| Final | Steering Committee Final Approval | Tag `v1.0.0` |
+
+A tag such as `v1.0.0-rc.1` is a fixed, named snapshot. The `rc` part means "release candidate".
+
+## Issues in the real repository
+
+Issues are raised with a form, and the automation adds labels and assigns the right editors. See [Raising an issue](raising-an-issue.md) and the practice form in this sandbox.

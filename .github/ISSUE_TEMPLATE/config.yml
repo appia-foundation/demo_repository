@@ -4,5 +4,5 @@ contact_links:
     url: https://github.com/appia-foundation/demo_repository/discussions
     about: For open-ended conversation that isn't a specific proposal or question.
   - name: Report a security vulnerability
-    url: https://github.com/appia-foundation/demo-repository/blob/main/SECURITY.md
+    url: https://github.com/appia-foundation/demo_repository/blob/main/SECURITY.md
     about: Please do not report security issues in public. Follow the process in SECURITY.md.

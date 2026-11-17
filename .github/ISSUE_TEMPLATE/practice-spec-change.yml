@@ -1,0 +1,65 @@
+name: Spec change (practice)
+description: Practise the form used in the real Core Specifications repository
+title: "[Spec change] "
+labels: ["spec-change"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This form works like the one in the real repository. Choose from the lists, tick the boxes, and write only the description. When you create the issue, labels are added for you. See [Raising an issue](https://github.com/appia-foundation/demo_repository/blob/main/docs/raising-an-issue.md) for what each answer does.
+  - type: dropdown
+    id: spec
+    attributes:
+      label: Which specification?
+      description: This is practice, so pick any. The sample specification stands in for the real ones.
+      options:
+        - "00 Core Specification (front cover and shared terms)"
+        - "01 Typology of Objects of Conformity"
+        - "02 Responsibilities and Interface Agreements"
+        - "03 Organizational Risk Management"
+        - "04 AI System Risk Management"
+        - "05 Management System"
+        - "06 AI System Technical Requirements"
+    validations:
+      required: true
+  - type: input
+    id: clause
+    attributes:
+      label: Clause or section (if known)
+      placeholder: e.g. 3 Terms and definitions
+  - type: textarea
+    id: issue
+    attributes:
+      label: What is the issue?
+      description: Describe the problem or gap.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed change
+      description: Suggested wording or approach, if you have one.
+  - type: dropdown
+    id: blocks
+    attributes:
+      label: Does this block v1.0?
+      description: Choose Yes only if the first release cannot go ahead without it.
+      options:
+        - "No"
+        - "Yes, it blocks v1.0"
+        - "Not sure"
+  - type: dropdown
+    id: changetype
+    attributes:
+      label: Type of change
+      description: Editorial means typos, formatting or links, with no change to meaning, requirements or terms.
+      options:
+        - "Editorial (no change to meaning)"
+        - "Substantive (changes meaning, a requirement or a term)"
+        - "Not sure"
+  - type: checkboxes
+    id: wg
+    attributes:
+      label: Working Group decision
+      options:
+        - label: This needs a Working Group decision (it will be added to the WG agenda)

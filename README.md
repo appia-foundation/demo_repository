@@ -12,6 +12,10 @@ The Appia membership has agreed to use GitHub to host our specifications. This g
 - **Transparent review**: proposed changes are discussed in the open before they are accepted.
 - **Traceability**: issues and pull requests link decisions back to the people and discussions behind them.
 
+## Start here: the training guide
+
+New to GitHub? Follow the [Training guide](docs/training-guide.md). It has a short path for contributors, reviewers and editors, with a checklist of what you should be able to do at the end.
+
 ## Orientation
 
 📺 **Orientation recording:** to be added. In the meantime, this README, the [Glossary](GLOSSARY.md) and the [FAQ](FAQ.md) cover the basics, and you can try the exercises below.
@@ -22,6 +26,13 @@ The Appia membership has agreed to use GitHub to host our specifications. This g
 |---|---|
 | [`specs/sample-specification.md`](specs/sample-specification.md) | A fictional specification to practise editing. It contains a few deliberate flaws for you to find. |
 | [`GLOSSARY.md`](GLOSSARY.md) | Plain-English definitions of GitHub terms, with Word and email comparisons. |
+| [`docs/training-guide.md`](docs/training-guide.md) | Learning paths for contributors, reviewers and editors, with a checklist. |
+| [`docs/raising-an-issue.md`](docs/raising-an-issue.md) | The issue form field by field, and what the automation adds. |
+| [`docs/reviewing-a-pull-request.md`](docs/reviewing-a-pull-request.md) | How to review changes well, and how that fits Working Group approval. |
+| [`docs/editors-workflow.md`](docs/editors-workflow.md) | The routine for editors, from issue to merged pull request. |
+| [`docs/markdown-cheat-sheet.md`](docs/markdown-cheat-sheet.md) | The Markdown you need to write a specification. |
+| [`docs/when-things-go-wrong.md`](docs/when-things-go-wrong.md) | Undoing changes, merge conflicts and other common problems. |
+| [`docs/exercises.md`](docs/exercises.md) | Extra exercises 8 to 15, with what you should see. |
 | [`docs/how-appia-maps-to-github.md`](docs/how-appia-maps-to-github.md) | How our working group and approval process translates into GitHub. |
 | [`docs/working-in-the-core-specs-repo.md`](docs/working-in-the-core-specs-repo.md) | How the real repository differs: `main` for releases, `dev` for staging, one branch per spec. |
 | [`docs/explore-the-history.md`](docs/explore-the-history.md) | A short exercise on seeing who changed what, and when. |
@@ -130,6 +141,7 @@ Once a PR has the required approvals, a maintainer will merge it. After merging,
 | 5 | Propose a change to a sample specification file and link it to an issue | End-to-end workflow |
 | 6 | Create a branch named `spec/yourname-sample` **from `dev`** and edit the sample specification | Spec-style branches |
 | 7 | Open a pull request from that branch **into `dev`** (not `main`) and link an issue | Working with `dev`, as in the real repository |
+| 8 to 15 | See the [extra exercises](docs/exercises.md): forms and automation, reviewing with suggestions, draft pull requests, conflicts, history and tables | Everything else you will need |
 
 ## Ground rules
 

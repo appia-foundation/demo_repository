@@ -84,4 +84,21 @@ Write `@their-username` in a comment.
 | `> quote` | A quoted paragraph |
 | `#12` | A link to issue or pull request 12 |
 
+## Forms and automation
+
+**I picked the wrong specification on the form.**
+Edit the issue (the three dots, then **Edit**) and change the answer. The labels follow.
+
+**Why did my issue get labels I did not add?**
+The form does it from your answers. See [Raising an issue](docs/raising-an-issue.md).
+
+**What does "blocks v1.0" mean?**
+Choose Yes only if the first release cannot go ahead without it.
+
+**Who decides what counts as an editorial change?**
+That is still being agreed by the Working Group. If you are not sure, choose **Not sure** and the editors will help.
+
+**Where are the learning materials?**
+In the [Training guide](docs/training-guide.md).
+
 Still stuck? Open an issue using the **Ask a question** template.

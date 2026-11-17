@@ -35,6 +35,10 @@ Thank you for taking part. This is a sandbox, so the main goal is to learn the w
 - You may be asked to make changes. That is a normal part of the process and isn't a criticism.
 - If a pull request is waiting for a long time, leave a polite comment mentioning the reviewer.
 
+## Learning the workflow
+
+Start with the [Training guide](docs/training-guide.md). It has paths for contributors, reviewers and editors.
+
 ## Need help?
 
 Check the [FAQ](FAQ.md) and [Glossary](GLOSSARY.md), or open an issue using the *Ask a question* template.

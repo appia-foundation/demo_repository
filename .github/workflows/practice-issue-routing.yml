@@ -1,0 +1,70 @@
+name: Label practice issues
+
+# Demonstrates the automation in the real Core Specifications repository.
+# It reads the issue form and adds labels. It does NOT assign or notify anyone.
+# Issue-event workflows run from the default branch.
+
+on:
+  issues:
+    types: [opened, edited]
+
+permissions:
+  issues: write
+  contents: read
+
+jobs:
+  label:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/github-script@v7
+        with:
+          script: |
+            const issue = context.payload.issue;
+            const body = issue.body || '';
+            const { owner, repo } = context.repo;
+            const action = context.payload.action;
+
+            // Only issues created from the practice form have these headings.
+            if (!/### Which specification\?/i.test(body)) return;
+
+            const specs = new Set();
+            for (const line of body.split(/\r?\n/)) {
+              const m = line.trim().match(/^(0[0-6]) /);
+              if (m) specs.add(`spec-${m[1]}`);
+            }
+            const wgTicked = /- \[[xX]\] This needs a Working Group decision/.test(body);
+            const field = name => {
+              const m = body.match(new RegExp('### ' + name + '\\s+([^\\r\\n]+)', 'i'));
+              return m ? m[1].trim().toLowerCase() : null;
+            };
+            const blocks = field('Does this block v1\\.0\\?');
+            const changeType = field('Type of change');
+
+            const current = issue.labels.map(l => l.name);
+            const desired = [...specs];
+            if (wgTicked) desired.push('status:needs-wg-decision');
+            if (blocks && blocks.startsWith('yes')) desired.push('blocks-v1.0');
+            if (changeType && changeType.startsWith('editorial')) desired.push('non-substantive');
+            if (action === 'opened' && !wgTicked) desired.push('status:new');
+
+            const toAdd = desired.filter(l => !current.includes(l));
+            if (toAdd.length) {
+              await github.rest.issues.addLabels({ owner, repo, issue_number: issue.number, labels: toAdd });
+            }
+            if (blocks && !blocks.startsWith('yes') && current.includes('blocks-v1.0')) {
+              await github.rest.issues.removeLabel({ owner, repo, issue_number: issue.number, name: 'blocks-v1.0' });
+            }
+            if (changeType && !changeType.startsWith('editorial') && current.includes('non-substantive')) {
+              await github.rest.issues.removeLabel({ owner, repo, issue_number: issue.number, name: 'non-substantive' });
+            }
+            for (const l of current.filter(l => /^spec-0[0-6]$/.test(l) && !specs.has(l))) {
+              await github.rest.issues.removeLabel({ owner, repo, issue_number: issue.number, name: l });
+            }
+
+            if (action === 'opened') {
+              await github.rest.issues.createComment({
+                owner, repo, issue_number: issue.number,
+                body: 'Labels were added from your answers on the form. In the real repository, the editors of the chosen specification would also be assigned and notified. ' +
+                      (wgTicked ? 'You ticked the Working Group box, so this would appear on the WG agenda.' : 'Editors would triage it before the next spec meeting.')
+              });
+            }

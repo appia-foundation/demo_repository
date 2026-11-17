@@ -23,6 +23,12 @@ Plain-English definitions of the terms you will see in this repository. Where it
 | **Conflict** | A situation where two people changed the same lines and GitHub can't decide which to keep. | Two people editing the same sentence at once. |
 | **Release / tag** | A named, fixed snapshot of the repository, such as `v0.1.0`. | A "published version 1.0" PDF. |
 | **Draft pull request** | A pull request marked as not ready for review yet. | A "work in progress" draft. |
+| **Issue form** | A form with drop-downs and tick boxes used to raise an issue, so the right labels and people are added automatically. | A structured request form instead of a blank email. |
+| **Automation (workflow)** | A small program that runs by itself when something happens, such as adding labels when an issue is created. | A mail rule that sorts messages for you. |
+| **Status label** | A label that shows where an issue stands, for example `status:needs-wg-decision`. | The status column on an action log. |
+| **Suggestion** | A reviewer's proposed wording that the author can accept with one click. | A tracked change you can accept. |
+| **Merge conflict** | Two changes to the same lines that GitHub cannot combine without a person deciding. | Two people rewriting the same sentence. |
+| **Candidate** | A release tagged for review before it is final, such as `v1.0.0-rc.1`. | A "release candidate" draft, not yet the final version. |
 | **Suggested change** | A reviewer's proposed edit that the author can accept with one click. | A tracked-changes suggestion you can accept. |
 | **CODEOWNERS** | A file that says who is automatically asked to review changes to particular files. | A standing list of required approvers. |
 | **GitHub Action** | An automated task that runs when something happens, such as a check on every pull request. | A spell-checker that runs by itself. |
