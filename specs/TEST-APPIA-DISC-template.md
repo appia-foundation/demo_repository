@@ -29,7 +29,9 @@
 ## 2. Normative references
 
 The following referenced documents are indispensable for the application of this document. For dated references, only the edition cited applies. For undated references, the latest edition of the referenced document (including any amendments) applies.
--	{write here the exact references}
+
+-	{write here the exact reference x}.
+-	{write here the exact reference y}.
 
 ## 3. Terms and definitions
 
@@ -52,17 +54,19 @@ NOTE {x} to entry: {add note here, when appropriated. AVOID ANY TECHNICAL OR MET
 | {Column 1} | {Column 2} |
 
 (if list)
-Some text
 
--	{item x}
+-	{item x} ;
+-	{item y}.
 
 (if numbered list)
 
-1) {numbered item x}.
+1) {numbered item x} ;
+1) {numbered item y}.
 
 ## (Bibliography)
 
--	{Add item here}
+-	{Add item x here}.
+-	{Add item y here}.
 
 ## (Annexes)
 
