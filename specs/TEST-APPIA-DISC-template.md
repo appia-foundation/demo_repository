@@ -30,8 +30,8 @@
 
 The following referenced documents are indispensable for the application of this document. For dated references, only the edition cited applies. For undated references, the latest edition of the referenced document (including any amendments) applies.
 
--	{write here the exact reference x}.
--	{write here the exact reference y}.
+- {write here the exact reference x}.
+- {write here the exact reference y}.
 
 ## 3. Terms and definitions
 
@@ -55,8 +55,8 @@ NOTE {x} to entry: {add note here, when appropriated. AVOID ANY TECHNICAL OR MET
 
 (if list)
 
--	{item x} ;
--	{item y}.
+- {item x} ;
+- {item y}.
 
 (if numbered list)
 
@@ -65,8 +65,8 @@ NOTE {x} to entry: {add note here, when appropriated. AVOID ANY TECHNICAL OR MET
 
 ## (Bibliography)
 
--	{Add item x here}.
--	{Add item y here}.
+- {Add item x here}.
+- {Add item y here}.
 
 ## (Annexes)
 
